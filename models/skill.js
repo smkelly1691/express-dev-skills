@@ -1,4 +1,4 @@
-const skills = [
+  const skills = [
     {id: 125223, skill: 'Problem Solving', done: true},
     {id: 127904, skill: 'Can-Do Confident Attitude', done: true},
     {id: 139608, skill: 'Attention to Detail', done: true}
@@ -6,9 +6,14 @@ const skills = [
   
   module.exports = {
     getAll,
-    getOne
+    getOne,
+    create
   };
   
+  function getAll() {
+    return skills;
+  }
+
   function getOne(id) {
     // URL params are strings - convert to a number
     id = parseInt(id);
@@ -17,8 +22,9 @@ const skills = [
     return skills.find(skill => skill.id === id);
   }
   
-  
-  function getAll() {
-    return skills;
+  function create(skill) {
+    skill.id = Date.now() % 1000000
+    skill.done = false
+    skills.push(skill)
   }
  
