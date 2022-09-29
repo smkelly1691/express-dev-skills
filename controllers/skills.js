@@ -1,4 +1,4 @@
- // controllers/todos.js
+ // controllers/skills.js
 
  const Skill = require('../models/skill')
 
