@@ -1,10 +1,39 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("https://www.simplilearn.com/ice9/free_resources_article_thumb/full_stack_banner.jpg");
+  background-color:rgb(35, 84, 150);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  max-width: 500px;
+  max-height: 500px;
+  min-width: 700px;
+  min-height:400px; 
+}
+
+div.main {
+  background-color: aliceblue;
+  border: 2px black;
+  margin: 0; 
+  width: 350px; 
+  height: 300px;
+  border-radius: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 a {
   color: #00B7FF;
+}
+
+#new {
+  text-align: left;
 }
 
 .delete-form {
@@ -18,4 +47,18 @@ a {
 	
 li {
   list-style: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+.nagivation {
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
